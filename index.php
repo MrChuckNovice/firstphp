@@ -13,6 +13,7 @@ switch ($villechoisie) {
     break;
 }
 ?>
+/
 <form action="index.php" method="post">
           <label for="ville">choisit une ville:</label>
           <select id="ville" name="ville">
