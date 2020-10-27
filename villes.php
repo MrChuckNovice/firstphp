@@ -1,6 +1,9 @@
 <?php
+if (empty($_POST)){
+    echo "veuillez choisir";
+}
+else{
 $villechoisie= $_POST['ville']; 
-
 switch ($villechoisie) {
     case "paris":
         echo $villechoisie. "est la capitale de la France";
@@ -11,6 +14,7 @@ switch ($villechoisie) {
     case "londre":
         echo $villechoisie. "est la capitale de la Grande-Bretagne";
     break;    
+}
 }
 ?>
 

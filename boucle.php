@@ -1,5 +1,8 @@
 <?php
-
+if (empty($_POST)) {
+    echo " veuillez selection une direction";
+  } 
+   else{
 $chevalier= $_POST['mouvement'];
 
 switch ($chevalier) {
@@ -16,7 +19,7 @@ switch ($chevalier) {
         echo $chevalier. " vous vous trouver devant un gouffre";
     break;        
 }
-
+}
 ?>
 
 <form action="boucle.php" method= "post";>

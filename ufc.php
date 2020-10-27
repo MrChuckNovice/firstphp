@@ -1,4 +1,8 @@
 <?php
+if (empty($_POST)){
+    echo "veuillez choisir un combattant";
+}
+else{
 $winner= $_POST['fighter'];
 
 switch ($winner) {
@@ -11,6 +15,7 @@ switch ($winner) {
     case "GADJEE":
         echo $winner. " il s'est fait déboiter par Khabib";
     break; 
+}
 }
 ?>
 

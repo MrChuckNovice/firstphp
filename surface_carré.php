@@ -1,5 +1,5 @@
 <?php
-
+// on oublie pas de mettre if (empty($_POST)) si non 
 if (empty($_POST)) {
     echo "veuillez choisir";
 }
