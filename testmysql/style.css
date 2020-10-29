@@ -1,0 +1,14 @@
+h1{
+  text-align: center;
+}
+
+
+table{
+   margin-left: auto;
+   margin-right: auto;
+   background-color: grey;
+}
+
+tbody{
+    background-color: white;
+}
