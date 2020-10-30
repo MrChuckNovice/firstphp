@@ -3,7 +3,7 @@
 $pdo = new PDO('mysql:host=localhost;dbname=exo_db;charset=utf8', 'root', '');
 //sa permet de rajouter une nouvelle entrée qui si on refraiche la page, rajoutera a nouveau la même entrée // 
 $pdo->exec('INSERT INTO client(id, nom, prenom, num, email)VALUES(\'""\', \'SMITH\', \'John\', \'0224685976\', \'John89@baba.com\')');
-
+$pdo->exec('UPDATE client SET prenom=\'Jack\' WHERE nom=\'SMITH\'');
 echo 'le client a été ajouté !';
 $query =$pdo->query('SELECT*FROM client');
 $data=$query->fetchAll(PDO::FETCH_ASSOC);
